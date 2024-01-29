@@ -1,0 +1,184 @@
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ALWAYS DO THIS FOR ALL THE IMAGES */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.articleTitle {
+  font-size: 1.5rem;
+}
+
+.articleReadMore,
+.articleInfo {
+  font-size: 0.875rem;
+}
+
+.articleReadMore {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.articleReadMore:hover,
+.articleReadMore:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+.articleInfo {
+  margin: 2em 0;
+}
+
+/* lAYOUT */
+
+.containerFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 675px) {
+  .containerFlex {
+    flex-direction: row;
+  }
+  main {
+    width: 70%;
+  }
+
+  aside {
+    width: 25%;
+    min-width: 200px;
+    margin-left: 1em;
+  }
+}
+
+/* articles */
+
+.articleBody {
+  margin-bottom: 1em;
+}
+
+.articleFeatured {
+  border-bottom: #707070 1px solid;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+.articleRecent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.articleRecentMain {
+  order: 2;
+}
+
+.articleRecentSecondary {
+  order: 1;
+}
+
+@media (min-width: 675px) {
+  .articleRecent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .articleRecentMain {
+    width: 68%;
+  }
+
+  .articleRecentSecondary {
+    width: 30%;
+  }
+
+  .articleFeatured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articleImage {
+    order: -2;
+  }
+
+  .articleInfo {
+    order: -1;
+  }
+
+  .articleImage {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* widgets */
+
+.sidebarWidget {
+  border: 20px solid #efefef;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.widgetTitle,
+.widgetRecentPostTitle {
+  font-size: 1rem;
+}
+
+.widgetTitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.widgetRecentPost {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1em;
+}
+
+.widgetRecentPost:last-child {
+  border: 0;
+  margin: 0;
+}
+
+.widgetImage {
+  order: -1;
+}

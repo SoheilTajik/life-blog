@@ -1,0 +1,16 @@
+p {
+  margin: 0;
+}
+
+.footerContainer {
+  background-color: #143774;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  margin-top: auto;
+  margin-bottom: 0;
+  
+}

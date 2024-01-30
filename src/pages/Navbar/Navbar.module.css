@@ -3,6 +3,8 @@
   color: #1792d2;
   font-size: 0.75rem;
   margin: 0;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 /* Layout */

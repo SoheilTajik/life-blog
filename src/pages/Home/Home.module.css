@@ -41,6 +41,12 @@ strong {
   font-weight: 700;
 }
 
+ul li {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .articleTitle {
   font-size: 1.5rem;
 }
@@ -48,12 +54,14 @@ strong {
 .articleReadMore,
 .articleInfo {
   font-size: 0.875rem;
+  letter-spacing: 2px;
 }
 
 .articleReadMore {
   color: #1792d2;
   text-decoration: none;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .articleReadMore:hover,
@@ -181,4 +189,5 @@ strong {
 
 .widgetImage {
   order: -1;
+  margin-bottom: 0.7em;
 }

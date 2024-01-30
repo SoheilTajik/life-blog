@@ -6,24 +6,24 @@ export const Navbar = () => {
   return (
     <header>
       <div className={`${Styles.container} ${Styles.containerNav}`}>
-        <div className="site-title">
+        <div className="siteTitle">
           <h1>Living the simple life</h1>
           <p className={Styles.subtitle}>A blog exploring minimalism in life</p>
         </div>
         <nav className={Styles.navbar}>
           <ul className="navList">
-            <li className="nav-list-item">
-              <Link to="/" className="nav-link">
+            <li className="navListItem">
+              <Link to="/" className="navLink">
                 Home
               </Link>
             </li>
-            <li className="nav-list-item">
-              <Link to="/about" className="nav-link">
+            <li className="navListItem">
+              <Link to="/about" className="navLink">
                 About Us
               </Link>
             </li>
-            <li className="nav-list-item">
-              <Link to="/posts" className="nav-link">
+            <li className="navListItem">
+              <Link to="/posts" className="navLink">
                 Recent Posts
               </Link>
             </li>
